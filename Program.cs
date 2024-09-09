@@ -32,26 +32,6 @@ internal class Program
         })
         .Build();
 
-        //var host = new HostBuilder()
-        //.ConfigureFunctionsWorkerDefaults()
-        //.ConfigureServices(services =>
-        //{
-        //    // Add Application Insights telemetry for worker service
-        //    services.AddApplicationInsightsTelemetryWorkerService();
-
-        //    // Disable adaptive sampling in Application Insights
-        //    services.Configure<TelemetryConfiguration>((config) =>
-        //    {
-        //        config.DefaultTelemetrySink.TelemetryProcessorChainBuilder.Build()
-        //        telemetryProcessor.Processors.OfType<Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.AdaptiveSamplingTelemetryProcessor>()
-        //            .FirstOrDefault()?.SamplingPercentage = 100;
-        //    });
-
-        //    //services.AddApplicationInsightsTelemetryWorkerService();
-        //    //services.ConfigureFunctionsApplicationInsights();
-        //})
-        //.Build();
-
         host.Run();
     }
 }
