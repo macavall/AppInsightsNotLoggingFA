@@ -10,7 +10,7 @@ internal class Program
     private static void Main(string[] args)
     {
         var host = new HostBuilder()
-        .ConfigureFunctionsWorkerDefaults()  // Configures for Azure Functions
+        .ConfigureFunctionsWebApplication()
         .ConfigureServices(services =>
         {
             // Add Application Insights telemetry for worker service
