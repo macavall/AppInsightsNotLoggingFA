@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "net8IsoFunc": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7276",
+      "launchBrowser": false
+    }
+  }
+}
